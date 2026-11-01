@@ -1,5 +1,316 @@
-<!---Treesa Abraham -IT Person
-ITEC 101 -->
-<h1>
-    Hello!
-</h1>
+<!DOCTYPE html>
+<!--
+  Page 1: Home (index.html)
+  Author: Treesa Abraham
+  Date: November 1, 2026
+  ITEC 101 - Business Group Website (Regions Bank, Columbia SC Branch)
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Regions Bank Columbia Branch - ITEC 101 Group Project</title>
+
+  <!-- Embedded styles. Teammates: copy this whole <style> block into page2.html and page3.html
+       so all three pages share the same look. -->
+  <style>
+    /* Whole page: font, background, text color */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f8f6;
+      color: #1f2d24;
+      line-height: 1.6;
+    }
+
+    /* Top bar with the site name and links to the other pages */
+    header {
+      background-color: #255a32;
+      color: #ffffff;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    header .site-name {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px 40px;
+    }
+
+    h1 {
+      font-size: 2.6em;
+      color: #255a32;
+      margin: 0 0 10px;
+      line-height: 1.15;
+    }
+
+    h2 {
+      color: #255a32;
+      border-bottom: 3px solid #f4c542;
+      padding-bottom: 6px;
+      margin-top: 48px;
+    }
+
+    h3 {
+      color: #2f6f3e;
+      margin: 0 0 6px;
+    }
+
+    p {
+      font-size: 1.05em;
+      margin: 0 0 12px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Hero section: business name, tagline, and image side by side */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      padding: 48px 0 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1 1 380px;
+    }
+
+    .hero-image {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .tagline {
+      font-size: 1.3em;
+      color: #3d5a45;
+    }
+
+    /* Call-to-action buttons */
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      margin: 8px 10px 0 0;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      background-color: #255a32;
+      color: #ffffff;
+      border: 2px solid #255a32;
+    }
+
+    .button:hover {
+      background-color: #1b4425;
+    }
+
+    .button.secondary {
+      background-color: #ffffff;
+      color: #255a32;
+    }
+
+    .button.secondary:hover {
+      background-color: #e8f3ea;
+    }
+
+    /* Featured offerings grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      border-top: 5px solid #3f8a50;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .card p {
+      font-size: 0.97em;
+      margin: 0;
+    }
+
+    /* Quick numbers row */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 18px;
+      text-align: center;
+      margin-top: 18px;
+    }
+
+    .stat-number {
+      font-size: 2em;
+      font-weight: bold;
+      color: #255a32;
+      margin: 0;
+    }
+
+    /* Mission badge and fun fact */
+    .mission {
+      background-color: #255a32;
+      color: #ffffff;
+      border-radius: 10px;
+      padding: 28px;
+      margin-top: 48px;
+    }
+
+    .mission h2 {
+      color: #ffffff;
+      margin-top: 0;
+    }
+
+    .fun-fact {
+      background-color: #fff6d6;
+      border-left: 6px solid #f4c542;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin-top: 24px;
+    }
+
+    footer {
+      background-color: #1f2d24;
+      color: #d7e3da;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    footer p {
+      margin: 4px 0;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="site-name">Regions Bank &middot; Columbia Branch</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="page2.html">Products &amp; Services</a>
+      <a href="page3.html">About Us &amp; Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero section: business name, tagline, image -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Regions Bank<br>Columbia Branch</h1>
+        <p class="tagline">Everyday banking, smart lending, and real people helping Columbia reach its financial goals.</p>
+        <!-- Call to action buttons -->
+        <a class="button" href="page2.html">Explore Our Products</a>
+        <a class="button secondary" href="page3.html">Get in Touch</a>
+      </div>
+      <div class="hero-image">
+        <img src="bank-building.svg" alt="Illustration of a bank building with columns and steps" width="380">
+      </div>
+    </section>
+
+    <!-- Elevator pitch -->
+    <h2>Who We Are</h2>
+    <p>
+      Regions Bank's Columbia branch at 1010 Gervais Street is a full-service bank for individuals,
+      families, small businesses, and commercial customers across Columbia and Richland County.
+      We help people with everything from opening a first checking account to financing a home
+      or growing a business, all backed by a regional bank that serves customers in 15 states.
+    </p>
+
+    <!-- Featured offerings -->
+    <h2>What We Offer</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Checking &amp; Savings</h3>
+        <p>Everyday accounts, debit cards, and savings options to manage and grow your money.</p>
+      </div>
+      <div class="card">
+        <h3>Loans &amp; Mortgages</h3>
+        <p>Home, auto, and personal loans, with lending decisions supported by careful risk analysis.</p>
+      </div>
+      <div class="card">
+        <h3>Business Banking</h3>
+        <p>Accounts and financing for small businesses and companies in the Columbia area.</p>
+      </div>
+      <div class="card">
+        <h3>Online &amp; Mobile Banking</h3>
+        <p>Check balances, transfer money, and pay bills from anywhere.</p>
+      </div>
+    </div>
+
+    <!-- Quick numbers -->
+    <h2>By the Numbers</h2>
+    <div class="stats">
+      <div>
+        <p class="stat-number">15</p>
+        <p>states served</p>
+      </div>
+      <div>
+        <p class="stat-number">1,200+</p>
+        <p>banking offices</p>
+      </div>
+      <div>
+        <p class="stat-number">1,750+</p>
+        <p>ATMs</p>
+      </div>
+      <div>
+        <p class="stat-number">~20,000</p>
+        <p>employees</p>
+      </div>
+    </div>
+
+    <!-- Trust / fun element: mission statement and student fun fact -->
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>
+        To help customers meet their financial goals while creating value for our customers,
+        employees, communities, and shareholders.
+      </p>
+    </section>
+
+    <div class="fun-fact">
+      <p><strong>Student fun fact:</strong> Our group covers three sides of the bank. The bank teller
+      handles your deposits at the counter, the loan officer reviews business loans, and the risk
+      data scientist builds the models that help keep those loans safe. All three rely on the same
+      transaction processing system behind the scenes.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>ITEC 101 Business Group Website &middot; Treesa Abraham, Anthony Horumba, Samantha Lyons</p>
+    <p>This is a student class project and is not an official Regions Bank website.</p>
+  </footer>
+
+</body>
+</html>

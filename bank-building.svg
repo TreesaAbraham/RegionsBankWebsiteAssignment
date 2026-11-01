@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="t">
+  <title id="t">Illustration of a bank building</title>
+  <!-- sky circle -->
+  <circle cx="200" cy="150" r="140" fill="#e8f3ea"/>
+  <!-- roof / pediment -->
+  <polygon points="200,40 330,105 70,105" fill="#2f6f3e"/>
+  <polygon points="200,58 300,100 100,100" fill="#3f8a50"/>
+  <circle cx="200" cy="84" r="12" fill="#f4c542"/>
+  <text x="200" y="89" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2f6f3e">$</text>
+  <!-- beam -->
+  <rect x="80" y="105" width="240" height="16" fill="#255a32"/>
+  <!-- columns -->
+  <g fill="#ffffff" stroke="#255a32" stroke-width="3">
+    <rect x="98" y="121" width="22" height="104"/>
+    <rect x="148" y="121" width="22" height="104"/>
+    <rect x="230" y="121" width="22" height="104"/>
+    <rect x="280" y="121" width="22" height="104"/>
+  </g>
+  <!-- door -->
+  <rect x="182" y="160" width="36" height="65" rx="18" fill="#255a32"/>
+  <!-- steps -->
+  <rect x="72" y="225" width="256" height="12" fill="#2f6f3e"/>
+  <rect x="60" y="237" width="280" height="12" fill="#3f8a50"/>
+  <rect x="48" y="249" width="304" height="12" fill="#2f6f3e"/>
+</svg>
