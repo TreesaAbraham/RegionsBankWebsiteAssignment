@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products & Services | Regions Bank Columbia</title>
+  <!-- Author: Anthony Horumba | Date: November 8, 2026 -->
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; color: #193a2a; background: #f7faf7; line-height: 1.5; }
+    header { background: white; padding: 18px 7%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid #d5e7d7; }
+    .logo { font-size: 23px; font-weight: bold; color: #17663c; }
+    nav a { text-decoration: none; color: #17663c; margin-left: 15px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 1150px; margin: auto; padding: 35px 22px 70px; }
+    .hero { display: flex; align-items: center; justify-content: space-between; gap: 45px; padding: 35px 0 55px; }
+    .hero div { flex: 1; }
+    .hero img { width: 42%; border-radius: 20px; }
+    h1 { font-size: 48px; line-height: 1.1; margin: 10px 0 18px; color: #11482d; }
+    h2 { color: #11482d; font-size: 30px; margin: 20px 0 8px; }
+    h3 { margin: 0 0 8px; font-size: 20px; color: #11482d; }
+    p { color: #51695a; }
+    .eyebrow { font-size: 13px; font-weight: bold; letter-spacing: 2px; color: #288552; text-transform: uppercase; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 25px; }
+    .card { background: white; padding: 25px; border: 1px solid #d9e9dc; border-radius: 17px; box-shadow: 0 7px 22px #123d2c0c; }
+    .symbol { font-size: 36px; margin-bottom: 12px; }
+    .price { font-size: 25px; font-weight: bold; color: #17663c; margin-top: 20px; }
+    .price small { font-size: 13px; font-weight: normal; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 25px 0 65px; }
+    .step { background: #e8f5ea; border-radius: 17px; padding: 23px; }
+    .number { display: inline-block; background: #17663c; color: white; font-weight: bold; border-radius: 50%; padding: 8px 15px; margin-bottom: 15px; }
+    .promo { background: #11482d; color: white; border-radius: 20px; padding: 30px; }
+    .promo h2, .promo p { color: white; }
+    .promo strong { display: inline-block; background: white; color: #11482d; border-radius: 9px; padding: 10px 20px; letter-spacing: 2px; }
+    .button { display: inline-block; background: #17663c; color: white; padding: 12px 18px; margin-top: 25px; border-radius: 10px; text-decoration: none; font-weight: bold; }
+    footer { padding: 24px; text-align: center; border-top: 1px solid #d5e7d7; color: #51695a; }
+    @media (max-width: 750px) { .hero { flex-direction: column; align-items: stretch; } .hero img { width: 100%; } .grid, .steps { grid-template-columns: 1fr; } h1 { font-size: 36px; } nav a { margin-left: 0; margin-right: 12px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Regions Bank | Columbia</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="page2.html">Products & Services</a>
+      <a href="page3.html">About & Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <span class="eyebrow">Products & Services</span>
+        <h1>Banking that moves you forward.</h1>
+        <p>From everyday accounts to personal loans and business banking, Regions Bank offers financial services to help Columbia customers reach their goals.</p>
+      </div>
+      <img alt="Green illustration of a bank building" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 260'%3E%3Crect width='420' height='260' rx='24' fill='%23e7f3e9'/%3E%3Cpath d='M75 110L210 35l135 75' fill='none' stroke='%23145c37' stroke-width='18' stroke-linecap='round'/%3E%3Crect x='90' y='110' width='240' height='110' rx='8' fill='%23ffffff'/%3E%3Cpath d='M130 125v85m55-85v85m55-85v85m55-85v85M80 222h260' stroke='%23145c37' stroke-width='14'/%3E%3C/svg%3E">
+    </section>
+
+    <h2>Our Banking Services</h2>
+    <p>Explore personal and business banking options at our Columbia branch.</p>
+    <section class="grid">
+      <article class="card"><div class="symbol">💳</div><h3>Everyday Checking</h3><p>Manage purchases, pay bills, and keep your everyday finances organized.</p><div class="price">$5 <small>/ month</small></div></article>
+      <article class="card"><div class="symbol">💰</div><h3>Savings Accounts</h3><p>Put money aside for future plans and build your savings over time.</p><div class="price">$0 <small>/ month</small></div></article>
+      <article class="card"><div class="symbol">🤝</div><h3>Personal Loans</h3><p>Borrow for important purchases with guidance from our banking team.</p><div class="price">$0 <small>application fee</small></div></article>
+      <article class="card"><div class="symbol">🚗</div><h3>Auto Loans</h3><p>Explore financing options when you're ready for your next vehicle.</p><div class="price">$0 <small>application fee</small></div></article>
+      <article class="card"><div class="symbol">🏢</div><h3>Business Banking</h3><p>Banking tools for local businesses looking to manage money and grow.</p><div class="price">$10 <small>/ month</small></div></article>
+      <article class="card"><div class="symbol">📱</div><h3>Online & Mobile Banking</h3><p>Check balances and manage your accounts conveniently from anywhere.</p><div class="price">$0 <small>/ month</small></div></article>
+    </section>
+
+    <h2 style="margin-top: 65px;">How It Works</h2>
+    <section class="steps">
+      <article class="step"><span class="number">1</span><h3>Choose a Service</h3><p>Find the account or loan option that fits your needs.</p></article>
+      <article class="step"><span class="number">2</span><h3>Speak With a Banker</h3><p>Ask questions and review the next steps with our team.</p></article>
+      <article class="step"><span class="number">3</span><h3>Get Started</h3><p>Complete your application or set up your new account.</p></article>
+    </section>
+
+    <section class="promo">
+      <h2>New Customer Special</h2>
+      <p>Enjoy 10% off the first three months of the Everyday Checking monthly service fee with code:</p>
+      <strong>COLUMBIA10</strong>
+    </section>
+    <a class="button" href="page3.html">Meet Our Columbia Team →</a>
+  </main>
+  <footer>Regions Bank · 1010 Gervais Street, Columbia, SC</footer>
+</body>
+</html>
